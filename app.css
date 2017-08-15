@@ -1,0 +1,72 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	background-color: #b7c0c7;
+}
+
+.chart-wrapper {
+  width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.labels {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.labels p {
+	margin: 10px;
+}
+
+.labels p::after {
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-left: 5px; 
+	border-radius: 7.5px;
+} 
+
+p.doping::after {
+	background-color: steelblue;
+}
+
+p.no-doping::after {
+	background-color: #e0ab18;
+}
+
+.chart-title {
+	font-size: 25px;
+	font-weight: bold;
+	fill: #7d669e;
+}
+
+.chart-subtitle {
+	font-size: 18px;
+	fill: #7d669e;
+}
+
+.axis line,
+.axis path {
+	stroke-width: 1px;
+	stroke: #ccc;
+	fill: none;
+	shape-rendering: crispEdges;
+}
+
+div.tooltip {	
+	position: absolute;			
+	text-align: center;
+	width: 150px;						
+	padding: 8px;				
+	font: 12px sans-serif;		
+	background: lightsteelblue;	
+	border: 0px;		
+	border-radius: 5px;			
+	pointer-events: none;			
+}
